@@ -1,12 +1,12 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { PokemonService } from './pokemon.service';
-import { Pokemon } from './entities/pokemon.entity';
+// import { Pokemon } from './entities/pokemon.entity';
 import { getModelToken } from '@nestjs/mongoose';
-import { Model } from 'mongoose';
+// import { Model } from 'mongoose';
 
 describe('PokemonService', () => {
   let service: PokemonService;
-  let model: Model<Pokemon>;
+  // let model: Model<Pokemon>;
 
   // const pokemons: Pokemon[] = [
   //   {
@@ -32,7 +32,7 @@ describe('PokemonService', () => {
     }).compile();
 
     service = module.get<PokemonService>(PokemonService);
-    model = module.get(getModelToken('Pokemon'));
+    // model = module.get(getModelToken('Pokemon'));
   });
 
   it('should be defined', () => {
