@@ -11,25 +11,35 @@
    npm install
    ```
 
-3. Tener instalando *Nest CLI* instalado
+3. Tener instalando _Nest CLI_ instalado
 
-    ```bash
-    npm i -g @nestjs/cli
-    ```
+   ```bash
+   npm i -g @nestjs/cli
+   ```
 
 4. Levantar la base de datos
 
-    ```bash
-    docker-compose up -d
-    ```
+   ```bash
+   docker-compose up -d
+   ```
 
-5. Reconstruir la base de datos con la semilla
+5. Clonar el archivo **.env.template** y ronombrar la copia a **.env**
 
-```http
-http://localhost:3000/api/v2/seed
-```
+6. Llenar las variables de entorno definidias en el **.env**
+
+7. Ejecutar la aplicación en de:
+
+   ```bash
+   npm run start:dev
+   ```
+
+8. Reconstruir la base de datos con la semilla
+
+   ```http
+   http://localhost:3000/api/v2/seed
+   ```
 
 ## Stack Tecnológico
 
-* NongoDB
-* Nest
+- NongoDB
+- Nest
