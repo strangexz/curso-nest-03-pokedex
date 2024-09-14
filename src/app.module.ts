@@ -15,7 +15,7 @@ import { EnvConfiguration } from './common/config/app.config';
       load: [EnvConfiguration],
     }),
     ServeStaticModule.forRoot({ rootPath: join(__dirname, '..', 'public') }),
-    MongooseModule.forRoot(process.env.MONGODB),
+    MongooseModule.forRoot(process.env.MONGODB, { dbName: process.env.DBNAME }),
     PokemonModule,
     CommonModule,
     SeedModule,

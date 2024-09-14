@@ -3,4 +3,5 @@ export const EnvConfiguration = () => ({
   mongodb: process.env.MONGODB,
   port: process.env.PORT || 3000,
   defaultLimit: process.env.DEFAULT_LIMIT || 7,
+  dbName: process.env.DBNAME || 'pokemonDB',
 });
