@@ -51,5 +51,5 @@
 
 ## Stack Tecnológico
 
-- NongoDB
+- MongoDB
 - Nest
